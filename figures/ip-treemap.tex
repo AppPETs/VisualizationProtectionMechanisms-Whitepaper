@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+	% Alice
+	\draw (0,4.25) rectangle ++(4.5,.5) node[pos=.5] {\textbf{\texttt{2001:db8::a}}};
+	\draw[fill=green!15] (0,.25) rectangle ++(4.5,4);
+	\draw[fill=white] (.25,2) rectangle ++(1.75,2) node[pos=.5] {%
+		\shortstack{%
+			File 2\\
+			\footnotesize\SI{3.5}{\mebi\byte}
+		}
+	};
+	\draw[fill=white] (2.25,2) rectangle ++(2,2) node[pos=.5] {%
+		\shortstack{%
+			File 1\\
+			\footnotesize\SI{4}{\mebi\byte}
+		}
+	};
+	\draw[fill=white] (.25,.5) rectangle ++(4,1.25) node[pos=.5] {%
+		\shortstack{%
+			File 3\\
+			\footnotesize\SI{5}{\mebi\byte}
+		}
+	};
+
+	% Bob
+	\draw (4.75,4.25) rectangle ++(4.5,.5) node[pos=.5] {\textbf{\texttt{2001:db8::b}}};
+	\draw[fill=red!15] (4.75,.25) rectangle ++(4.5,4);
+	\draw[fill=white] (5,.5) rectangle ++(4,3.5) node[pos=.5] {%
+		\shortstack{%
+			File 4\\
+			\footnotesize\SI{14}{\mebi\byte}
+		}
+	};
+\end{tikzpicture}
